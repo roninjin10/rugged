@@ -1,7 +1,5 @@
 import { InjectedConnector } from "@wagmi/core";
-import * as React from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
-import "./App.css";
 import { AppProviders } from "./AppProviders";
 
 const Content = () => {

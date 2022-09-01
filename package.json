@@ -6,8 +6,16 @@
       "packages/*"
     ]
   },
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "yarn workspaces foreach run test && yarn workspaces foreach run lint && yarn workspaces foreach run build"
+  },
   "version": "0.0.0",
   "main": "packages/ui/index.html",
   "author": "roninjin10",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.1"
+  },
+  "packageManager": "yarn@3.2.3"
 }
